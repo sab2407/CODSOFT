@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobboard Pro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Jobboard Pro</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Side -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showHome()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showJobs()">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showEmployerDashboard()">Employer Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showCandidateDashboard()">Candidate Dashboard</a>
+                </li>
+            </ul>
+
+            <!-- Right Side -->
+            <ul class="navbar-nav">
+                <li class="nav-item" id="loginNav">
+                    <a class="nav-link" href="#" onclick="showLogin()">Login</a>
+                </li>
+                <li class="nav-item" id="logoutNav" style="display:none;">
+                    <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<div class="container mt-4">
+    <div id="home" class="content">
+        <div class="hero-section text-center py-5">
+            <h1 class="display-4 fw-bold">Find Your Dream Job Today</h1>
+            <p class="lead">
+                Connect with top employers and discover opportunities that match your skills and aspirations.
+            </p>
+            <p class="text-muted">
+                Join thousands of job seekers and employers who trust Jobboard Pro for their career journey.
+            </p>
+        </div>
+
+        <div class="container">
+            <h3 class="text-center">Featured Job Opportunities</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Simple JS functions -->
+<script>
+function showHome() {
+    alert("Home Page");
+}
+
+function showJobs() {
+    alert("Jobs Page");
+}
+
+function showEmployerDashboard() {
+    alert("Employer Dashboard");
+}
+
+function showCandidateDashboard() {
+    alert("Candidate Dashboard");
+}
+
+function showLogin() {
+    alert("Login Page");
+}
+
+function logout() {
+    alert("Logged out");
+}
+</script>
+
+</body>
+</html>
